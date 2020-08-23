@@ -6,6 +6,6 @@
 
 #### Project: Application of ANN Algorithms
 
-#### Mentor: [Sangyeon Kim](https://github.com/KimSangYeon-DGU) and [Saksham Bansal] (https://github.com/saksham189)
+#### Mentor: [Sangyeon Kim](https://github.com/KimSangYeon-DGU) and [Saksham Bansal](https://github.com/saksham189)
 
 ## Abstract
