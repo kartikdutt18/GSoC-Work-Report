@@ -254,3 +254,26 @@ The core implementation is complete. Once the review suggestions are incorporate
 The forward propogation is complete. The next steps include writing the backward propogation and verifying it's output.
 
 
+## Other Contributions
+### 23. [Use 0 to numClass Labels instead of 1 to 10 where NLL is used](https://github.com/mlpack/examples/pull/104)
+### 24. [Move Layer to Sequential Type](https://github.com/mlpack/mlpack/pull/2519)
+### 25. [Style fixes in mlpack-repo](https://github.com/mlpack/mlpack/pull/2491/files)
+### 26. [Document CMake Flags](https://github.com/mlpack/mlpack/pull/2475)
+### 27. [Documentation fix in BatchNorm](https://github.com/mlpack/mlpack/pull/2453)
+### 28. [Remove Python 2.7 from Azure builds](https://github.com/mlpack/mlpack/pull/2430)
+
+## Blog
+You can follow my weekly progress on my medium blogs.
+[Medium Articles by kartikdutt18](https://medium.com/@kartikdutt18)
+
+## Scope and Future Work
+I would like to continue contributing to mlpack's repositories since it alligns well with my personal area of interest as well. Firstly, I would like to finish testing my currently open PRs and have them merged into the codebase. Secondly, during the project we got to see YOLOv4 and YOLOv5 research papers being published hence it would be nice to spend some implementing these models as well. I would also like to get more people interested in mlpack/models repository mantaining same or higher standard as above.
+
+## Acknowledgement
+On a final note, I am extremely grateful to my mentors, Sangyeon Kim and Saksham Bansal for all their support, reviews and help. I am also very thankful for their patience whenever I got stuck and their suggestions that helped me in resolving them.
+
+I am also thankful to mlpack community for all their reviews help and suggestions. I am also thankful to Marcus, Ryan Curtin and Ryan Birmingham that helped me with contributing to mlpack.
+
+mlpack was the first Machine Learning library that I contributed to, and it has been a really amazing journey. I also learned a lot through this project and I intend to continue contributing to mlpack.
+
+I am also thankful to Google for the opportunity to work on this wonderful project, which helped me learn a lot in such a short period of time.
