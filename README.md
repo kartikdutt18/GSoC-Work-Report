@@ -272,7 +272,7 @@ I would like to continue contributing to mlpack's repositories since it alligns 
 ## Acknowledgement
 On a final note, I am extremely grateful to my mentors, Sangyeon Kim and Saksham Bansal for all their support, reviews and help. I am also very thankful for their patience whenever I got stuck and their suggestions that helped me in resolving them.
 
-I am also thankful to mlpack community for all their reviews help and suggestions. I am also thankful to Marcus, Ryan Curtin and Ryan Birmingham that helped me with contributing to mlpack.
+I am also thankful to mlpack community for all their reviews help and suggestions. I am also thankful to Marcus, Ryan Curtin and Ryan Birmingham that helped me in contributing to mlpack.
 
 mlpack was the first Machine Learning library that I contributed to, and it has been a really amazing journey. I also learned a lot through this project and I intend to continue contributing to mlpack.
 
