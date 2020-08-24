@@ -27,3 +27,15 @@ Contributions were made to the [mlpack/mlpack](https://github.com/mlpack/mlpack)
 mlpack/mlpack Contributions |  mlpack/models Contributions |  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)  |  ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png) | ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png)
+
+[Restructuring - 1 (Adding Data loader and associated Utility Functions)](https://github.com/mlpack/models/pull/3)
+
+# Aim:
+1. Set basic structure for models repository.
+2. Add CSV Dataloader.
+3. Add unit testing for models repository using BOOST_TESTS.
+4. Add testing in Azure pipelines.
+
+# Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
