@@ -130,11 +130,11 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 
 Speed Improvement |
 :-------------------------:|
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormSpeedComparision.png)  |
+<img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormSpeedComparision.png" width="120" height="120"> |
 
 Model Performance Improvement |
 :-------------------------:|
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormCNN.png)  |
+<img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormCNN.png" width="120" height="120"> |
 
 
 ### 11. [Add BatchNorm to CNN example](https://github.com/mlpack/examples)
