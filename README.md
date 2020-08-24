@@ -256,11 +256,11 @@ The forward propogation is complete. The next steps include writing the backward
 
 ## Other Contributions
 ### 23. [Use 0 to numClass Labels instead of 1 to 10 where NLL is used](https://github.com/mlpack/examples/pull/104)
-### 24. [Move Layer to Sequential Type](https://github.com/mlpack/mlpack/pull/2519)
-### 25. [Style fixes in mlpack-repo](https://github.com/mlpack/mlpack/pull/2491/files)
-### 26. [Document CMake Flags](https://github.com/mlpack/mlpack/pull/2475)
-### 27. [Documentation fix in BatchNorm](https://github.com/mlpack/mlpack/pull/2453)
-### 28. [Remove Python 2.7 from Azure builds](https://github.com/mlpack/mlpack/pull/2430)
+#### 24. [Move Layer to Sequential Type](https://github.com/mlpack/mlpack/pull/2519)
+#### 25. [Style fixes in mlpack-repo](https://github.com/mlpack/mlpack/pull/2491/files)
+#### 26. [Document CMake Flags](https://github.com/mlpack/mlpack/pull/2475)
+#### 27. [Documentation fix in BatchNorm](https://github.com/mlpack/mlpack/pull/2453)
+#### 28. [Remove Python 2.7 from Azure builds](https://github.com/mlpack/mlpack/pull/2430)
 
 ## Blog
 You can follow my weekly progress on my medium blogs.
