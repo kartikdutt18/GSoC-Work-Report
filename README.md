@@ -26,4 +26,4 @@ Contributions were made to the [mlpack/mlpack](https://github.com/mlpack/mlpack)
 
 mlpack/mlpack Contributions             |  mlpack/models Contributions |  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions 
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)  |  ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png) | ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png)
+![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)  |  ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png) | ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png)
