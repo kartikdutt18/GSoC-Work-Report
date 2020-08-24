@@ -235,3 +235,22 @@ Complete. This PR is ready to merge. It was decided that all YOLO related PRs wi
 #### Status :
 Complete. The model implementation is complete. The only thing left is to verify the model output using mlpack-PyTorch-weight-converter. Once the output is verfied this PR can be merged.
 
+### 21. [Bounding Box Visualizer](https://github.com/mlpack/models/pull/31)
+
+#### Aim:
+1. Add function to plot and save bounding boxes on an image.
+
+#### Status :
+The core implementation is complete. Once the review suggestions are incorporated, this PR can be merged as well.
+
+### 22. [Add YOLOv3 Layer](https://github.com/mlpack/models/pull/32)
+
+#### Aim:
+1. Add YOLOv3 layer i.e. This layer allows skip connections which are later upscaled and concatenated.
+2. With this we can implement YOLOv3 tiny / full in one go.
+3. Since the we already have DarkNet 53 blocks for YOLOv3, we can simply pass it in this class to obtain YOLOv3 model.
+
+#### Status :
+The forward propogation is complete. The next steps include writing the backward propogation and verifying it's output.
+
+
