@@ -24,8 +24,6 @@ We met most of those initially proposed as well as some additional targets that 
 Contributions were made to the [mlpack/mlpack](https://github.com/mlpack/mlpack), [mlpack/models](https://github.com/mlpack/models), [mlpack/examples](https://github.com/mlpack/examples) and [kartikdutt18/mlpack-PyTorch-Weight-Translator](https://github.com/kartikdutt18/mlpack-PyTorch-Weight-Translator).
 
 <p align="left">
-  <img width="124" height="124" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png"> mlpack contributions
-</p>
-<p align="center">
-  <img width="124" height="124" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png"> mlpack contributions
+  <img width="300" height="224" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png"> mlpack contributions
+  <img width="300" height="224" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png"> models contributions
 </p>
