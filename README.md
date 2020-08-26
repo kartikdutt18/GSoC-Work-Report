@@ -28,7 +28,7 @@ For simplicity, I have divided contributions made into the repository they were 
 ### mlpack/mlpack Contributions
 
 <p align="center">
-  <img width="448" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png">
+  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png">
 </p>
 
 ### 1. [Add IoU metric for bounding boxes](https://github.com/mlpack/mlpack/pull/2402)
@@ -95,15 +95,11 @@ Speed Improvement | Model Performance Improvement |
 :-------------------------:|:-------------------------:|
 <img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormSpeedComparision.png" width="420" height="320"> | <img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormCNN.png" width="520" height="320"> |
 
+
 ### mlpack/models Contributions
 <p align="center">
-  <img width="448" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png">
+  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png">
 </p>
-
-
-|  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
-:-------------------------:
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png)
 
 ### 1. [Restructuring - 1 (Adding Data loader and associated Utility Functions)](https://github.com/mlpack/models/pull/3)
 
@@ -123,19 +119,9 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 2. Add wiki tutorial for dataloader and utility functions.
 
 #### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
+Merged. Everything in the PR has been completed and merged into the codebase
 
-### 3. [Adding Documentation for DataLoader](https://github.com/mlpack/models/pull/9)
-
-#### Aim:
-1. Add documentation for dataloader.
-2. Add wiki tutorial for dataloader.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-
-### 6. [Restructuring 2 - Add Utility functions and Run all Tests](https://github.com/mlpack/models/pull/12)
+### 3. [Restructuring 2 - Add Utility functions and Run all Tests](https://github.com/mlpack/models/pull/12)
 
 #### Aim:
 1. Add Utility functions for the models repository.
@@ -145,7 +131,7 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 Merged. Everything in the PR has been completed and merged into the codebase.
 
 
-### 8. [Image Dataloader with Field type](https://github.com/mlpack/models/pull/18)
+### 4. [Image Dataloader with Field type](https://github.com/mlpack/models/pull/18)
 
 #### Aim:
 1. Implement `Augmentation` class to resize images.
@@ -157,7 +143,7 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
 
-### 9. [Image Dataloader Documentation](https://github.com/mlpack/models/pull/19)
+### 5. [Image Dataloader Documentation](https://github.com/mlpack/models/pull/19)
 
 #### Aim:
 1. Add documentation for image dataloader.
@@ -167,8 +153,86 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 Merged. Everything in the PR has been completed and merged into the codebase.
 
 
+### 6. [Add DarkNet models, Ensmallen Callbacks and ChannelFirst Preprocessor](https://github.com/mlpack/models/pull/20)
 
-### 11. [Add BatchNorm to CNN example](https://github.com/mlpack/examples)
+#### Aim:
+1. Implement DarkNet model such that we can reproduce PyTorch models in mlpack.
+2. Use mlpack-weight Converter to translate weights into the mlpack models as well as verify the model output. This became necessary since training the model took a very long time.
+3. Add Channel-First PreProcessor function that converts an image loaded in mlpack to the matrix as if it was loaded in PyTorch i.e. transpose the channels, convert numbers to uint8 and divide them by 255.
+4. Add Periodic Save Callback that allows periodic saving of models during training.
+5. Add Print Metric Callback that allows printing any metric implemented in mlpack after each epoch on either training set, validation set or both.
+6. Add tests for DarkNet class.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 7. [DarkNet Documentation](https://github.com/mlpack/models/pull/23)
+
+#### Aim:
+1. Add documentation for DarkNet.
+2. Add wiki tutorial for DarkNet and ensmallen callbacks.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 8. [Remove simpler models](https://github.com/mlpack/models/pull/28)
+
+#### Aim:
+1. To nearly complete restructuring, all simple models were removed from models repository.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 9. [YOLO PreProcessor](https://github.com/mlpack/models/pull/25)
+
+#### Aim:
+1. This PR converts annotations / bounding boxes loaded using DataLoader to encoded feature maps.
+2. This supports all YOLO versions between 1 and 3.
+3. Add tests to verify output of the PreProcessor from PyTorch implementation of models.
+
+
+#### Status :
+Complete. This PR is ready to merge. It was decided that all YOLO related PRs will be merged with the YOLO model.
+
+### 10. [YOLO Loss Function / Detector](https://github.com/mlpack/models/pull/29)
+
+#### Aim:
+1. Add Loss function to decode output from YOLO model so that the model can be trained.
+2. Add detailed tests to verify loss functions.
+
+#### Status :
+Complete. This PR is ready to merge. It was decided that all YOLO related PRs will be merged with the YOLO model.
+
+### 11. [Add YOLO class](https://github.com/mlpack/models/pull/24)
+
+#### Aim:
+1. Implement YOLOv1 model.
+2. Add tests to verify it's working.
+
+#### Status :
+Complete. The model implementation is complete. The only thing left is to verify the model output using mlpack-PyTorch-weight-converter. Once the output is verfied this PR can be merged.
+
+### 12. [Bounding Box Visualizer](https://github.com/mlpack/models/pull/31)
+
+#### Aim:
+1. Add function to plot and save bounding boxes on an image.
+
+#### Status :
+The core implementation is complete. Once the review suggestions are incorporated, this PR can be merged as well.
+
+### 13. [Add YOLOv3 Layer](https://github.com/mlpack/models/pull/32)
+
+#### Aim:
+1. Add YOLOv3 layer i.e. This layer allows skip connections which are later upscaled and concatenated.
+2. With this we can implement YOLOv3 tiny / full in one go.
+3. Since the we already have DarkNet 53 blocks for YOLOv3, we can simply pass it in this class to obtain YOLOv3 model.
+
+#### Status :
+The forward propogation is complete. The next steps include writing the backward propogation and verifying it's output.
+
+### mlpack/examples Contributions
+
+### 1. [Add BatchNorm to CNN example](https://github.com/mlpack/examples)
 
 #### Aim:
 1. Add BatchNorm layer to CNN example in examples repository.
@@ -177,7 +241,12 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 #### Status :
 Complete. Everything in the PR has been completed and is ready for merging.
 
-### 12. [mlpack-PyTorch-Weight-Translator](https://github.com/kartikdutt18/mlpack-PyTorch-Weight-Translator)
+### kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
+<p align="center">
+  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png">
+</p>
+
+### 1. [mlpack-PyTorch-Weight-Translator](https://github.com/kartikdutt18/mlpack-PyTorch-Weight-Translator)
 
 #### Aim:
 1. Generate CSV files for weights, biases and all trainable parameters from PyTorch models.
@@ -192,91 +261,15 @@ Complete. Everything in the PR has been completed and is ready for merging.
 #### Status :
 Complete. Since, this was a different repository, I have created a bash file for testing.
 
-### 13. [Add DarkNet models, Ensmallen Callbacks and ChannelFirst Preprocessor](https://github.com/mlpack/models/pull/20)
-
-#### Aim:
-1. Implement DarkNet model such that we can reproduce PyTorch models in mlpack.
-2. Use mlpack-weight Converter to translate weights into the mlpack models as well as verify the model output. This became necessary since training the model took a very long time.
-3. Add Channel-First PreProcessor function that converts an image loaded in mlpack to the matrix as if it was loaded in PyTorch i.e. transpose the channels, convert numbers to uint8 and divide them by 255.
-4. Add Periodic Save Callback that allows periodic saving of models during training.
-5. Add Print Metric Callback that allows printing any metric implemented in mlpack after each epoch on either training set, validation set or both.
-6. Add tests for DarkNet class.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-### 14. [DarkNet Documentation](https://github.com/mlpack/models/pull/23)
-
-#### Aim:
-1. Add documentation for DarkNet.
-2. Add wiki tutorial for DarkNet and ensmallen callbacks.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-### 15. [Remove simpler models](https://github.com/mlpack/models/pull/28)
-
-#### Aim:
-1. To nearly complete restructuring, all simple models were removed from models repository.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-### 18. [YOLO PreProcessor](https://github.com/mlpack/models/pull/25)
-
-#### Aim:
-1. This PR converts annotations / bounding boxes loaded using DataLoader to encoded feature maps.
-2. This supports all YOLO versions between 1 and 3.
-3. Add tests to verify output of the PreProcessor from PyTorch implementation of models.
-
-
-#### Status :
-Complete. This PR is ready to merge. It was decided that all YOLO related PRs will be merged with the YOLO model.
-
-### 19. [YOLO Loss Function / Detector](https://github.com/mlpack/models/pull/29)
-
-#### Aim:
-1. Add Loss function to decode output from YOLO model so that the model can be trained.
-2. Add detailed tests to verify loss functions.
-
-#### Status :
-Complete. This PR is ready to merge. It was decided that all YOLO related PRs will be merged with the YOLO model.
-
-### 20. [Add YOLO class](https://github.com/mlpack/models/pull/24)
-
-#### Aim:
-1. Implement YOLOv1 model.
-2. Add tests to verify it's working.
-
-#### Status :
-Complete. The model implementation is complete. The only thing left is to verify the model output using mlpack-PyTorch-weight-converter. Once the output is verfied this PR can be merged.
-
-### 21. [Bounding Box Visualizer](https://github.com/mlpack/models/pull/31)
-
-#### Aim:
-1. Add function to plot and save bounding boxes on an image.
-
-#### Status :
-The core implementation is complete. Once the review suggestions are incorporated, this PR can be merged as well.
-
-### 22. [Add YOLOv3 Layer](https://github.com/mlpack/models/pull/32)
-
-#### Aim:
-1. Add YOLOv3 layer i.e. This layer allows skip connections which are later upscaled and concatenated.
-2. With this we can implement YOLOv3 tiny / full in one go.
-3. Since the we already have DarkNet 53 blocks for YOLOv3, we can simply pass it in this class to obtain YOLOv3 model.
-
-#### Status :
-The forward propogation is complete. The next steps include writing the backward propogation and verifying it's output.
 
 
 ## Other Contributions
-#### 23. [Use 0 to numClass Labels instead of 1 to 10 where NLL is used](https://github.com/mlpack/examples/pull/104)
-#### 24. [Move Layer to Sequential Type](https://github.com/mlpack/mlpack/pull/2519)
-#### 25. [Style fixes in mlpack-repo](https://github.com/mlpack/mlpack/pull/2491/files)
-#### 26. [Document CMake Flags](https://github.com/mlpack/mlpack/pull/2475)
-#### 27. [Documentation fix in BatchNorm](https://github.com/mlpack/mlpack/pull/2453)
-#### 28. [Remove Python 2.7 from Azure builds](https://github.com/mlpack/mlpack/pull/2430)
+#### 1. [Use 0 to numClass Labels instead of 1 to 10 where NLL is used](https://github.com/mlpack/examples/pull/104)
+#### 2. [Move Layer to Sequential Type](https://github.com/mlpack/mlpack/pull/2519)
+#### 3. [Style fixes in mlpack-repo](https://github.com/mlpack/mlpack/pull/2491/files)
+#### 4. [Document CMake Flags](https://github.com/mlpack/mlpack/pull/2475)
+#### 5. [Documentation fix in BatchNorm](https://github.com/mlpack/mlpack/pull/2453)
+#### 6. [Remove Python 2.7 from Azure builds](https://github.com/mlpack/mlpack/pull/2430)
 
 ## Blog
 You can follow my weekly progress on my medium blogs.
