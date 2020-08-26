@@ -23,6 +23,21 @@ We met most of those initially proposed as well as some additional targets that 
 ## Contributions
 Contributions were made to the [mlpack/mlpack](https://github.com/mlpack/mlpack), [mlpack/models](https://github.com/mlpack/models), [mlpack/examples](https://github.com/mlpack/examples) and [kartikdutt18/mlpack-PyTorch-Weight-Translator](https://github.com/kartikdutt18/mlpack-PyTorch-Weight-Translator).
 
+For simplicity, I have divided contributions made into the repository they were made to.
+
+mlpack/mlpack Contributions|
+|:-------------------------:|
+![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)
+
+
+### 1. [Add IoU metric for bounding boxes](https://github.com/mlpack/mlpack/pull/2402)
+
+#### Aim:
+1. Add IoU metric for bounding boxes.
+2. Add tests for IoU metric.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
 
 mlpack/mlpack Contributions |  mlpack/models Contributions |  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -57,14 +72,6 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
 
-### 4. [Add IoU metric for bounding boxes](https://github.com/mlpack/mlpack/pull/2402)
-
-#### Aim:
-1. Add IoU metric for bounding boxes.
-2. Add tests for IoU metric.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
 
 ### 5. [Add Non Maximal Supression for bounding boxes](https://github.com/mlpack/mlpack/pull/2410)
 
