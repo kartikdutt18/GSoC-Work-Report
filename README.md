@@ -25,10 +25,11 @@ Contributions were made to the [mlpack/mlpack](https://github.com/mlpack/mlpack)
 
 For simplicity, I have divided contributions made into the repository they were made to.
 
-mlpack/mlpack Contributions|
-|:-------------------------:|
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)
+### mlpack/mlpack Contributions
 
+<p align="center">
+  <img width="448" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png">
+</p>
 
 ### 1. [Add IoU metric for bounding boxes](https://github.com/mlpack/mlpack/pull/2402)
 
