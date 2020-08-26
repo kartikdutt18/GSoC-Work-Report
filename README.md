@@ -28,7 +28,7 @@ For simplicity, I have divided contributions made into the repository they were 
 ### mlpack/mlpack Contributions
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png">
+  <img width="200" height="250" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png">
 </p>
 
 ### 1. [Add IoU metric for bounding boxes](https://github.com/mlpack/mlpack/pull/2402)
@@ -98,7 +98,7 @@ Speed Improvement | Model Performance Improvement |
 
 ### mlpack/models Contributions
 <p align="center">
-  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png">
+  <img width="200" height="250" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png">
 </p>
 
 ### 1. [Restructuring - 1 (Adding Data loader and associated Utility Functions)](https://github.com/mlpack/models/pull/3)
@@ -243,7 +243,7 @@ Complete. Everything in the PR has been completed and is ready for merging.
 
 ### kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
 <p align="center">
-  <img width="400" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png">
+  <img width="200" height="250" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png">
 </p>
 
 ### 1. [mlpack-PyTorch-Weight-Translator](https://github.com/kartikdutt18/mlpack-PyTorch-Weight-Translator)
