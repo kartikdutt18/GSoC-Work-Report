@@ -40,9 +40,70 @@ For simplicity, I have divided contributions made into the repository they were 
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
 
-mlpack/mlpack Contributions |  mlpack/models Contributions |  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack_repo_contributions.png)  |  ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png) | ![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png)
+### 2. [Add Non Maximal Supression for bounding boxes](https://github.com/mlpack/mlpack/pull/2410)
+
+#### Aim:
+1. Add Fast Non Maximal Suppression.
+2. Add tests for this metric.
+3. Verify values using torch.ops.nms()
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 3. [Bug Fix : Check correctness of shape in Transposed Conv. layer only when output width and height aren't zero](https://github.com/mlpack/mlpack/pull/2436)
+
+#### Aim:
+1. Transposed convolution should check for correctness only when output width / height is specified.
+2. Add simple test to show that a model can be declared without specifying width and height.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 4. [Extending Support of BatchNorm layer to Convolutional Layer output](https://github.com/mlpack/mlpack/pull/2474)
+
+#### Aim:
+1. Implement mini-BatchNorm (BatchNorm2D) to support multi-channel output (such as output from Conv. layer).
+2. Implement Backward propogation for the same.
+3. Ensure parameters match and verify output from PyTorch.
+4. Add tests for the same.
+5. Verify output of a small model with and without BatchNorm2D.
+6. See speed increase with BatchNorm2D compared to previous implementation of BatchNorm.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+### 5. [Optimize Backward Propogation for BatchNorm Layer](https://github.com/mlpack/mlpack/pull/2512)
+
+#### Aim:
+1. In this PR, an alternative implementation to backward propogation of BatchNorm which performs faster in Python.
+2. Add tests to verify output.
+
+#### Status :
+The implementation is complete. However, the gradient test fails with this implementation. Since, this is an optimization and doesn't change API of the layer, it was decided to leave it as it is for now.
+
+### 6. [Changes in Deterministic settings of FNN](https://github.com/mlpack/mlpack/pull/2552)
+
+#### Aim:
+1. This was a PR for bug fix. The FFN class didn't set deterministic parameter for layers correctly.
+2. This PR fixed the afforementioned problem and set layers in deterministic mode for prediction and training mode during training.
+3. Verified its working.
+
+#### Status :
+Merged. Everything in the PR has been completed and merged into the codebase.
+
+Speed Improvement | Model Performance Improvement |
+:-------------------------:|:-------------------------:|
+<img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormSpeedComparision.png" width="420" height="320"> | <img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormCNN.png" width="520" height="320"> |
+
+### mlpack/models Contributions
+<p align="center">
+  <img width="448" height="300" src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/models_repo_contributions.png">
+</p>
+
+
+|  kartikdutt18/mlpack-PyTorch-Weight-Translator Contributions
+:-------------------------:
+![](https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/mlpack-PyTorch-Translator.png)
 
 ### 1. [Restructuring - 1 (Adding Data loader and associated Utility Functions)](https://github.com/mlpack/models/pull/3)
 
@@ -74,16 +135,6 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 Merged. Everything in the PR has been completed and merged into the codebase.
 
 
-### 5. [Add Non Maximal Supression for bounding boxes](https://github.com/mlpack/mlpack/pull/2410)
-
-#### Aim:
-1. Add Fast Non Maximal Suppression.
-2. Add tests for this metric.
-3. Verify values using torch.ops.nms()
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
 ### 6. [Restructuring 2 - Add Utility functions and Run all Tests](https://github.com/mlpack/models/pull/12)
 
 #### Aim:
@@ -93,14 +144,6 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
 
-### 7. [Bug Fix : Check correctness of shape in Transposed Conv. layer only when output width and height aren't zero](https://github.com/mlpack/mlpack/pull/2436)
-
-#### Aim:
-1. Transposed convolution should check for correctness only when output width / height is specified.
-2. Add simple test to show that a model can be declared without specifying width and height.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
 
 ### 8. [Image Dataloader with Field type](https://github.com/mlpack/models/pull/18)
 
@@ -123,22 +166,6 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
 
-### 10. [Extending Support of BatchNorm layer to Convolutional Layer output](https://github.com/mlpack/mlpack/pull/2474)
-
-#### Aim:
-1. Implement mini-BatchNorm (BatchNorm2D) to support multi-channel output (such as output from Conv. layer).
-2. Implement Backward propogation for the same.
-3. Ensure parameters match and verify output from PyTorch.
-4. Add tests for the same.
-5. Verify output of a small model with and without BatchNorm2D.
-6. See speed increase with BatchNorm2D compared to previous implementation of BatchNorm.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-Speed Improvement | Model Performance Improvement |
-:-------------------------:|:-------------------------:|
-<img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormSpeedComparision.png" width="420" height="320"> | <img src="https://github.com/kartikdutt18/GSoC-Work-Report/blob/master/src/BatchNormCNN.png" width="520" height="320"> |
 
 
 ### 11. [Add BatchNorm to CNN example](https://github.com/mlpack/examples)
@@ -191,25 +218,6 @@ Merged. Everything in the PR has been completed and merged into the codebase.
 
 #### Aim:
 1. To nearly complete restructuring, all simple models were removed from models repository.
-
-#### Status :
-Merged. Everything in the PR has been completed and merged into the codebase.
-
-### 16. [Optimize Backward Propogation for BatchNorm Layer](https://github.com/mlpack/mlpack/pull/2512)
-
-#### Aim:
-1. In this PR, an alternative implementation to backward propogation of BatchNorm which performs faster in Python.
-2. Add tests to verify output.
-
-#### Status :
-The implementation is complete. However, the gradient test fails with this implementation. Since, this is an optimization and doesn't change API of the layer, it was decided to leave it as it is for now.
-
-### 17. [Changes in Deterministic settings of FNN](https://github.com/mlpack/mlpack/pull/2552)
-
-#### Aim:
-1. This was a PR for bug fix. The FFN class didn't set deterministic parameter for layers correctly.
-2. This PR fixed the afforementioned problem and set layers in deterministic mode for prediction and training mode during training.
-3. Verified its working.
 
 #### Status :
 Merged. Everything in the PR has been completed and merged into the codebase.
